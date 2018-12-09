@@ -1,0 +1,107 @@
+.content{
+  position: absolute;
+  z-index: 1
+  top: 10%;
+  left: 50%;
+  margin-top: 180px;
+  margin-left: -180px;
+}
+.content .logo{
+  height: 400px;
+  width:400px;
+}
+.theview::after{
+  content: "";
+  height: 90vh;
+  width:100%;
+  background-image: url(laptop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  background-size: cover;
+
+}
+.Services{
+  padding-top: 20px;
+  text-align: center;
+  background-color: lightgrey;
+  font-size: 20px;
+  border-bottom: solid black 3px;
+}
+.aka{
+  padding-top: 20px;
+
+}
+.grid-3{
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(3,1fr);
+
+}
+.grid-1{
+  display: grid;
+  grid-gap: 29px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr;
+  padding: auto;
+
+
+}
+.laptop{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.grid-2{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2,1fr);
+
+}
+.About{
+  background-color: white;
+
+}
+.abt{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin:auto;
+}
+.Contact{
+  background-image:url(call.jpg);
+  filter:blur(5px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  weight 100%;
+  transition: all 1000ms;
+  color:white;
+}
+.Contact:hover{
+  filter:blur(0px);
+  transition: all 1000ms;
+}
+.Twitter{
+  color:black;
+}
+.fkt{
+  margin-top: 0px;
+  padding-bottom: 3px;
+  background-color: black;
+  color:white;
+}
+
+@@media query(max-width:560px) {
+  .theview::after{height: 45vh;
+}
+.grid-3{grid-template-columns: 1fr;
+
+}
+.grid-2{
+  grid-template-columns: 1fr;
+}
+.logo{
+  weight:200px;
+  height:200px;
+}
+}
